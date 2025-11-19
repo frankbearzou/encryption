@@ -5,7 +5,7 @@ import java.util.Base64;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-public class DesDemo {
+public class DesDefaultDemo {
     public static String encrypt(String input, String keyStr) throws Exception {
         Cipher cipher = Cipher.getInstance("DES");
         Key desKey = new SecretKeySpec(keyStr.getBytes(), "DES");
